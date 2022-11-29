@@ -1,100 +1,104 @@
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: rgb(7, 7, 7);
-  opacity: 0.8;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-nav img {
-  width: 100px;
-  height: 100px;
-}
-nav .navbar-center {
-  display: flex;
-}
-nav .navbar-center input {
-  width: 40rem;
-  height: 2rem;
-  border-radius: 20px 0 0 20px;
-  border: 2px solid orangered;
-  outline: none;
-}
-nav .navbar-center button {
-  border-radius: 0 20px 20px 0;
-  width: 5rem;
-  border: 2px solid orangered;
-  background-color: orangered;
-  color: white;
-}
-nav .navbar-right .material-icons {
-  margin-right: 2rem;
-  color: orangered;
-}
-
-form {
-  display: flex;
-  padding: 10px;
-  margin: 3rem;
-  background: #000;
-  opacity: 0.5;
-  margin: 10rem 30px 0 30px;
-}
-form select {
-  padding: 10px;
-  margin: 20px;
-  width: 25%;
-}
-form button {
-  padding: 10px;
-  margin: 20px;
-  width: 10%;
-  background-color: red;
-  border: none;
-}
-
-.product-container {
-  display: flex;
-  flex-direction: column;
-}
-.product-container img {
-  width: 14rem;
-  height: 14rem;
-}
-.product-container .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 5rem;
-  padding: 10px;
-}
-.product-container .card-container .card {
-  margin: 1rem;
-  background: white;
-  padding: 1rem;
-}
-.product-container .card-container .material-icons {
-  font-size: 100px;
-  color: gray;
-  cursor: pointer;
-}
-.product-container label {
-  margin: 3rem 0 0 6rem;
-  font-size: 30px;
-  font-weight: bold;
-}
-.product-container span {
-  font-size: 30px;
-  font-weight: bold;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  height: 100vh;
-  background: rgb(232, 228, 228);
-}
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background: rgb(232, 228, 228);
+  }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(7, 7, 7);
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  nav img {
+    width: 100px;
+    height: 100px;
+  }
+  nav .navbar-center {
+    display: flex;
+  }
+  nav .navbar-center input {
+    width: 40rem;
+    height: 2rem;
+    border-radius: 20px 0 0 20px;
+    border: 2px solid orangered;
+    outline: none;
+  }
+  nav .navbar-center button {
+    border-radius: 0 20px 20px 0;
+    width: 5rem;
+    border: 2px solid orangered;
+    background-color: orangered;
+    color: white;
+  }
+  nav .navbar-right .material-icons {
+    margin-right: 2rem;
+    color: orangered;
+  }
+  
+  form {
+    display: flex;
+    padding: 10px;
+    margin: 3rem;
+    background: #000;
+    opacity: 0.5;
+    margin: 10rem 30px 0 30px;
+  }
+  form select {
+    padding: 10px;
+    margin: 20px;
+    width: 25%;
+  }
+  form button {
+    padding: 10px;
+    margin: 20px;
+    width: 10%;
+    background-color: red;
+    border: none;
+  }
+  form button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-container img {
+    width: 14rem;
+    height: 14rem;
+  }
+  .product-container .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    padding: 10px;
+  }
+  .product-container .card-container .card {
+    margin: 1rem;
+    background: white;
+    padding: 1rem;
+  }
+  .product-container .card-container .material-icons {
+    font-size: 100px;
+    color: gray;
+    cursor: pointer;
+  }
+  .product-container label {
+    margin: 3rem 0 0 6rem;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .product-container span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
