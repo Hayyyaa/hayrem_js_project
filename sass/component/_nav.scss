@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(7, 7, 7);
+    opacity: 0.7;
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    .navbar-center{
+        display: flex;
+        input{
+            width: 40rem;
+            height: 2rem;
+            border-radius: 20px 0 0 20px;
+            border:2px solid orangered;
+            outline: none;
+        }
+        button{
+            border-radius: 0 20px 20px 0;
+            width: 5rem;
+            border:2px solid orangered;
+            background-color: orangered;
+            color: white;
+        }
+    }
+    .navbar-right{
+        .material-icons{
+            margin-right: 2rem;
+            color: orangered;
+        }
+    }
+}
