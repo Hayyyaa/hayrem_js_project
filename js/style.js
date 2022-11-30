@@ -1,11 +1,11 @@
 // const product = document.querySelector(".card-container");
 
-
-function createProduct() {
-    document.querySelector(".card-container").remove();
+// ----------------------Product---------------------------
+function viewProduct() {
     let product_container = document.querySelector(".product-container");
+    document.querySelector(".card-container").remove();
     let product = document.createElement('div');
-    product.className =".card-container"
+    product.className ="card-container"
     for (let index in products) {
         let dom_card = document.createElement("div");
         dom_card.className = "card";
@@ -27,11 +27,25 @@ function createProduct() {
 
 }
 let rating_number = [5,1]
-let products = [{"img":'../img/Nike_jordan_1.jpg',"title": "Nike", "price":"$189","rating":rating_number[1]},
-                {"img":'../img/Nike_jordan_1.jpg',"title": "Nike", "price":"$189","rating":rating_number[1]},
-                {"img":'../img/Nike_jordan_1.jpg',"title": "Nike", "price":"$189","rating":rating_number[1]},
-                {"img":'../img/Nike_jordan_1.jpg',"title": "Nike", "price":"$189","rating":rating_number[1]},
+let products = [{"img":'../img/Nike_jordan_1.jpg',"title": "Nike Jordan 1 High Gorge Green", "price":"US $180","rating":rating_number[1]},
+                {"img":'../img/Nike_jordan_2.jpg',"title": "Nike Jordan 2", "price":"$189","rating":rating_number[1]},
+                {"img":'../img/Nike_jordan_3.jpg',"title": "Nike", "price":"$189","rating":rating_number[1]},
+                {"img":'../img/Nike_jordan_4.jpg',"title": "Nike", "price":"$189","rating":rating_number[1]},
                 {"img":'../img/Nike_jordan_1.jpg',"title": "Nike", "price":"$189","rating":rating_number[1]},
                 {"img":'../img/Nike_jordan_1.jpg',"title": "Nike", "price":"$189","rating":rating_number[1]},
             ]
-createProduct()
+viewProduct()
+
+
+function createProduct() {
+    let seller = document.querySelector(".continer");
+    let add_img_product = document.createElement("div");
+    add_img_product.className = "product-img";
+    let span_img = document.createElement("span");
+    span_img.textContent = "Add image product";
+    let add_image = document.createElement("input[type=file]");
+    add_img_product.appendChild(span_img);
+    add_image_product.addEventListener(add_image);
+    seller.appendChild(add_image_product);
+    console.log(seller)
+}

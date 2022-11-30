@@ -37,68 +37,40 @@ nav {
     background-color: orangered;
     color: white;
   }
-  nav .navbar-right .material-icons {
-    margin-right: 2rem;
-    color: orangered;
-  }
-  
-  form {
-    display: flex;
+  .navbar-right button{
+    margin-right: 50px;
     padding: 10px;
-    margin: 3rem;
-    background: #000;
-    opacity: 0.5;
-    margin: 10rem 30px 0 30px;
-  }
-  form select {
-    padding: 10px;
-    margin: 20px;
-    width: 25%;
-  }
-  form button {
-    padding: 10px;
-    margin: 20px;
-    width: 10%;
     background-color: red;
-    border: none;
   }
-  form button a {
+  a{
     text-decoration: none;
-    color: white;
+    color: #ffffff;
   }
-  
   .product-container {
     display: flex;
     flex-direction: column;
+    /* position: relative; */
+    margin-top: 10%;
   }
   .product-container img {
-    width: 14rem;
-    height: 14rem;
-  }
-  .product-container .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5rem;
-    padding: 10px;
-  }
-  .product-container .card-container .card {
-    margin: 1rem;
-    background: white;
-    padding: 1rem;
-  }
-  .product-container .card-container .material-icons {
-    font-size: 100px;
-    color: gray;
-    cursor: pointer;
+    width: 16rem;
+    height: 16rem;
   }
   .product-container label {
-    margin: 3rem 0 0 6rem;
+    margin: 1rem 0 0 3rem;
     font-size: 30px;
     font-weight: bold;
+    position: fixed;
   }
-  .product-container span {
-    font-size: 30px;
-    font-weight: bold;
+  .card-container {
+    display: flex;
+    margin: 4% 2% ;
+    overflow-y: hidden;
+  }
+  .card{
+    margin: 1%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
   }
   
