@@ -2,24 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>seller</title>
+    <title>Seller</title>
     <link rel="stylesheet" href="css/sell.css" />
   </head>
   <body>
-<!-- -----------------------Navbar-------------------------------- -->
     <nav>
       <ul>
-        <a href="#"><img src="../../img/logo.png" /></a>
-        <h2>Sell your product</h2>
+        <img src="../../img/logo.png" />
+        <h2>Sell Your Products</h2>
       </ul>
       <ul>
-        <button><a href="../index.html">Buy Product</a></button>
+        <button><a href="../index.html">Buy Products</a></button>
       </ul>
     </nav>
-<!-- -------------------------Show dailog------------------------- -->
-    <div id="add-product">
-      <button>Add Product</button>
+    <div id="products-dialog" style="display: none">
+      <dialog open>
+        <header>Create new product</header>
+
+        <section>
+          <label>Upload Product</label>
+          <input id="image" type="text" placeholder="upload a ULR" />
+          <label>Product Name</label>
+          <input id="name" type="text" placeholder="name of product" />
+          <label>Price</label>
+          <input id="price" type="text" placeholder="price"/>
+          <label>Description</label>
+          <textarea name="description" id="descript" cols="103" rows="5" placeholder="Boi..." maxlength="100"></textarea>
+        </section>
+
+        <menu>
+          <!-- When clicking on button,  call the right function  -->
+          <button onclick="onCancel()">Cancel</button>
+
+          <!-- When clicking on button,  call the right function  -->
+          <button onclick="onCreate()">Create</button>
+        </menu>
+      </dialog>
     </div>
-    <script defer src="seller.html"></script>
+    <div id="products-container">
+      <button onclick="onAddProduct()">Add Product</button>
+      <div id="card-container"></div>
+    </div>
+    <script src="js/sell.js"></script>
   </body>
 </html>
