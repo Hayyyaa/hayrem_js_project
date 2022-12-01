@@ -38,3 +38,23 @@ let products = [{"img":'../img/Nike_jordan_1.jpg',"title": "Nike Jordan 1 High G
                 {"img":'../img/Nike_jordan_1.jpg',"title": "Nike", "price":"$189","description": "Jordan 1 high Gorge Green for boy","rating":rating_number[1]},
             ]
 viewProduct()
+let getSearch = document.querySelector("#search");
+
+getSearch.addEventListener("keyup", researchProduct);
+
+let card = document.querySelectorAll(".card");
+function researchProduct(){
+    for (let i in card){
+        let word = card[i].children[1].textContent.toLowerCase();
+        console.log(word);
+        let valueOfSearch = getSearch.value.toLowerCase();
+        if (word.indexOf(valueOfSearch)>-1){
+            card[i].style.display = "block";
+        }
+        else{
+            card[i].style.display = "none";
+        }
+        
+    }
+}
+researchProduct();

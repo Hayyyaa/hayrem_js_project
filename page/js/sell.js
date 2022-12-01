@@ -94,6 +94,19 @@ function onAddProduct() {
 function onCancel(e) {
   hide(product_dialog)
 }
+function onCreate() {
+  hide(product_dialog)
+
+  let newProduct = {};
+  newProduct.image = document.querySelector("#image").value;
+  newProduct.name = document.querySelector("#name").value;
+  newProduct.price = document.querySelector("#price").value;
+  // newProduct.description = document.querySelector("#description").value;
+  // Update the list of question, save question on local sotrage, update the view
+  products.push(newProduct);
+  saveProducts();
+  viewProduct();
+}
 // saveProducts()
 loadProducts()
 viewProduct()
