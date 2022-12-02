@@ -21,6 +21,36 @@
                     <button><a href="page/seller.html">Sell Product</a></button>
                 </div>
             </nav>           
+<!-- ----------------------------------Card-Payment------------------------------- -->
+            <div id="payment-dialog" style="display: none;">
+                <dialog open>
+                    <header>Payment</header>
+                    <section>
+                        <div class="own-cvv">
+                            <div class="owner">
+                                <label>Owner</label>
+                                <input id="owner" type="text" required/>
+                            </div>
+                            <div class="cvv">
+                                <label>CVV</label>
+                                <input id="cvv" type="text" required />
+                            </div>
+                        </div>
+                        <div id="card-number">
+                            <label>Card Number</label>
+                            <input id="number" type="number" placeholder="1111-2222-3333-4444" required maxlength="16" minlength="12"/>
+                        </div>
+                        <div class="card-pay">
+                            <div class="expired">
+                                <label>Expired date</label>
+                                <input type="tel" id="expired-date" required placeholder="MM/YY" maxlength="2">
+                            </div>
+                            <img src="image/card.png">
+                        </div>
+                        <button id="confirm" value="Pay Now">Pay Now</button>
+                    </section>
+                </dialog>
+            </div>
 <!--------------------------------------Product--------------------------------------->
             <div class="product-container">
                 <label>Our Product</label>

@@ -1,8 +1,18 @@
 // const product = document.querySelector(".card-container");
 
+let product_container = document.querySelector(".product-container");
+let payment_dialog = document.querySelector("#payment-dialog");
+// -----------------------Show/Hide------------------
+function show(element) {
+    element.style.display = 'block';
+}
+function hide(element) {
+    element.style.display = 'none';
+}
+show(payment_dialog);
+hide(payment_dialog);
 // ----------------------Product---------------------------
 function viewProduct() {
-    let product_container = document.querySelector(".product-container");
     document.querySelector(".card-container").remove();
     let product = document.createElement('div');
     product.className ="card-container"
@@ -10,7 +20,7 @@ function viewProduct() {
         let dom_card = document.createElement("div");
         dom_card.className = "card";
         let images = document.createElement("img");
-        images.src = products[index].img
+        images.src = products[index].img;
         let title = document.createElement("p");
         title.textContent = products[index].title;
         let price = document.createElement("p");
@@ -29,14 +39,7 @@ function viewProduct() {
     console.log(product_container)
 
 }
-let rating_number = [5,1]
-let products = [{"img":'../img/Nike_jordan_1.jpg',"title": "Nike Jordan 1 High Gorge Green", "price":"US $180","description": "Jordan 1 high Gorge Green for boy","rating":rating_number[1]},
-                {"img":'../img/Nike_jordan_2.jpg',"title": "Nike Jordan 2", "price":"$189","description": "Jordan 1 high Gorge Green for boy","rating":rating_number[1]},
-                {"img":'../img/Nike_jordan_3.jpg',"title": "Nike", "price":"$189","description": "Jordan 1 high Gorge Green for boy","rating":rating_number[1]},
-                {"img":'../img/Nike_jordan_4.jpg',"title": "Nike", "price":"$189","description": "Jordan 1 high Gorge Green for boy","rating":rating_number[1]},
-                {"img":'../img/Nike_jordan_1.jpg',"title": "Nike", "price":"$189","description": "Jordan 1 high Gorge Green for boy","rating":rating_number[1]},
-                {"img":'../img/Nike_jordan_1.jpg',"title": "Nike", "price":"$189","description": "Jordan 1 high Gorge Green for boy","rating":rating_number[1]},
-            ]
+let products = JSON.parse(localStorage.getItem("products"));
 viewProduct()
 let getSearch = document.querySelector("#search");
 

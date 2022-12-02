@@ -5,6 +5,7 @@ body {
     height: 100vh;
     background: rgb(232, 228, 228);
   }
+/* -----------------------navbar-------------------- */
 nav {
     display: flex;
     justify-content: space-between;
@@ -46,6 +47,7 @@ nav {
     text-decoration: none;
     color: #ffffff;
   }
+  /* --------------------product-card-------------------- */
   .product-container {
     display: flex;
     flex-direction: column;
@@ -73,4 +75,63 @@ nav {
     padding: 20px;
     border-radius: 10px;
   }
-  
+/* -------------------product-detail--------------------- */
+
+/* ----------------------payment---------------------- */
+#payment-dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  background-color: rgb(52, 35, 35);
+}
+section{
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+.own-cvv{
+  display: flex;
+  /* margin: 10px; */
+}
+.owner, .cvv, #card-number{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.card-pay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-pay img{
+  height: 50px;
+  justify-content: center;
+}
+.expired {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+header{
+  background: green;
+  padding: 8px;
+  width:30%;
+  text-align: center;
+}
+#confirm{
+  padding: 10px;
+  margin: 10px;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}

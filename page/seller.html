@@ -21,27 +21,27 @@
 
         <section>
           <label>Upload Product</label>
-          <input id="image" type="text" placeholder="upload a ULR" />
+          <input id="image" type="text" placeholder="upload a url" required />
           <label>Product Name</label>
-          <input id="name" type="text" placeholder="name of product" />
+          <input id="name" type="text" placeholder="name of product" required/>
           <label>Price</label>
-          <input id="price" type="text" placeholder="price"/>
+          <input id="price" type="text" placeholder="price" required/>
           <label>Description</label>
           <textarea name="description" id="descript" cols="103" rows="5" placeholder="Boi..." maxlength="100"></textarea>
         </section>
 
         <menu>
           <!-- When clicking on button,  call the right function  -->
-          <button onclick="onCancel()">Cancel</button>
+          <button onclick="onCancel()" id="cancel">Cancel</button>
 
           <!-- When clicking on button,  call the right function  -->
-          <button onclick="onCreate()">Create</button>
+          <button onclick="onCreate()" id="create">Create</button>
         </menu>
       </dialog>
     </div>
     <div id="edit-view"></div>
       <div id="products-container">
-        <button onclick="onAddProduct()">Add Product</button>
+        <button onclick="onAddProduct()">Add Product +</button>
         <div id="card-container"></div>
       </div>
     <script src="js/sell.js"></script>
