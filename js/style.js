@@ -1,6 +1,7 @@
 // const product = document.querySelector(".card-container");
 
 let product_container = document.querySelector(".product-container");
+let product_details = document.querySelector("#product-detail");
 let payment_dialog = document.querySelector("#payment-dialog");
 // -----------------------Show/Hide------------------
 function show(element) {

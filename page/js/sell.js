@@ -87,7 +87,10 @@ function viewProduct() {
 function removeProduct(event) {
   let index = event.target.parentElement.parentElement.dataset.index;
   console.log(index);
-  products.splice(index, 1);
+  let message = "Do you want to delete?"
+  if (confirm(message) === true) {
+    products.splice(index, 1);
+  }
 
   saveProducts()
 
